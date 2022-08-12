@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+
+
+    border: none;
+    font-size: 1rem;
+    color: black;
+
+    font-family: 'Didact Gothic', sans-serif;
+
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    flex-basis: auto;
+    justify-content: space-evenly;
+
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    --web-view-name: Home Page;
+    --web-view-id: Home_Page;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+
+    transition: 500ms;
+
+
+}
+
+hr {
+    width: auto;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: lighter
+}
+/* --------------------------- Header --------------------- */
+
+header {
+    width: 1920px;
+    position: static;
+    top: 0px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    min-height: 14vh;
+    height: auto;
+
+    justify-content: space-around;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    position: relative;
+    left: 30px;
+    float: left;
+}
+
+.logo-bin {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 10vw;
+
+    width: auto;
+
+
+}
+
+.logo img {
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo img:hover {
+    width: 65%;
+    position: inherit;
+    animation-delay: 200ms;
+    transition: 700ms;
+    content: url(../Images/MaskGroup2.svg);
+}
+
+nav {
+
+    display: inline-flex;
+
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+
+
+}
+
+nav ul li {
+
+    justify-content: center;
+    display: inline-flex;
+    padding: 20px;
+    border-radius: 50px;
+
+}
+
+nav ul li:hover {
+    background-color: #f5f3f1;
+    transition: 1200ms;
+    animation-delay: 50ms;
+    border-radius: 50px;
+}
+
+nav ul li a {
+
+    font-size: 1.2rem;
+    display: inline-block;
+    color: #4d4d4d;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+/* --------------------------- Header --------------------- */
+/* --------------------------- Big Image --------------------- */
+
+.banner {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slide {
+    position: relative;
+    height: 920px;
+
+}
+
+.image {
+    flex: 1;
+    background-image: url(../Images/whale.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 100%;
+    overflow: auto;
+}
+/* --------------------------- Big Image --------------------- */
+/* --------------------------- Body --------------------- */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    z-index: 500;
+
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.smallertitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #b5b5b5;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #b5b5b5;
+}
+
+
+.subtextspan {
+    display: flex;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+
+    justify-content: center;
+    font-size: 2rem;
+}
+
+
+.subtextspan .box\ --2 h2 {
+    font-size: 1rem;
+}
+.subtextspan .box {
+
+    width: 500px;
+}
+/* --------------------------- Body --------------------- */
+/* --------------------------- Button --------------------- */
+
+
+.banner .button {
+    position: absolute;
+
+    top: 806px;
+    right: 240px;
+
+}
+
+button {
+    cursor: pointer;
+    width: 400px;
+    height: 70px;
+    border-radius: 47px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(50, 201, 225, 1) 100%);
+
+
+
+
+}
+
+.container button {
+    font-size: 1.45rem;
+    color: #ffff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+button a {
+    font-size: 1.45rem;
+    color: #ffff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+/* --------------------------- Button --------------------- */
+
+
+
+.container p {
+    font-size: 1.2rem;
+}
+
+.container h3 {
+    font-size: 1.5rem;
+}
+
+.--rightside {
+
+    position: relative;
+    float: right;
+    z-index: 3470;
+    bottom: 300px;
+    left: 70vw;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 1250px;
+
+}
+
+.--small {
+    margin-top: 10vh;
+    height: 866px;
+}
+
+.--big {
+    background-color: #f5f3f1;
+    height: auto;
+
+
+}
+
+.blackbar {
+    position: relative;
+    height: 30vh;
+}
+
+/* --------------------------- Gallery and Grid --------------------- */
+
+
+.gallery .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    height: 500px;
+
+
+}
+
+.gallery .box .card img {
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.gallery .box h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 1;
+}
+
+.gallery .box p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.gallery {
+    padding-top: 10vh;
+    min-height: 920px;
+    background-color: #f5f3f1;
+    justify-content: center;
+    margin-right: 100px;
+    display: flex;
+    margin-bottom: 20px;
+
+
+}
+
+.gallery .container {
+    width: 536px;
+    position: relative;
+    left: 100px;
+}
+
+.container {
+
+    width: 536px;
+    text-align: center;
+
+
+}
+
+.gallery .card {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardex {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    font-size: 3rem;
+    color: #ffff;
+    height: 100%;
+    width: 100%;
+    border: 4px;
+    transition: 500ms;
+    overflow: hidden;
+    background-color: #5c5c5c;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+
+}
+
+.gallery-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 250px));
+    grid-auto-rows: minmax(250px, 250px);
+
+    grid-gap: 10px;
+
+    margin: auto;
+
+}
+/* --------------------------- Gallery and Grid --------------------- */
+/* --------------------------- Footer --------------------- */
+
+.footer {
+
+    background-image: url(../Images/Rectangle14.png);
+    height: 400px;
+
+}
+
+.footer footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.footer .text {
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-right: 35vw;
+}
+
+.footer .text p {
+    color: #b5b5b5;
+    font-size: 1.5rem;
+}
+
+
+
+#copyright {
+    font-size: 1rem;
+}
+
+#findmore {
+
+    bottom: 100px;
+    color: #b5b5b5;
+    font-size: 2.0rem;
+    margin-bottom: 5vh;
+}
+
+.socialcopy {
+    margin-top: 20vh;
+    margin-right: 10vw;
+
+
+}
+
+.socialcopy img {
+    margin-left: 20px;
+}
+
+/* --------------------------- Footer --------------------- */
+/* --------------------------- Nav drop down --------------------- */
+.buttondrop {
+    float: left;
+    overflow: hidden;
+}
+
+.buttondrop .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+}
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+
+}
+
+#uniquebutton {
+    width: auto;
+    height: auto;
+
+    border: none;
+    background: none
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+/* --------------------------- Nav drop down --------------------- */
+
+.buttondrop:hover .dropdown-content {
+    display: block;
+}
+
+.container div {
+    display: inline-flex;
+}
+
+.leftside {
+    text-align: center;
+    position: relative;
+    right: 400px;
+}
+
+.leftside p {
+    width: 536px;
+}
+
+.rightside {
+    text-align: center;
+    position: relative;
+    left: 400px;
+    bottom: 300px;
+
+}
+
+.rightside img {
+    position: absolute;
+    float: right;
+    bottom: 300px;
+    width: 356px;
+    height: auto;
+    right: 100px
+}
+
+.leftside img {
+
+
+    width: 356px;
+    height: auto;
+}
+
+
+.rightside p {
+    width: 536px;
+}
+
+.about {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+}
+
+input {
+    width: 400px;
+    height: 55px;
+
+    border: solid 5px black;
+    border-radius: 77px;
+    position: relative;
+    margin-bottom: 40px;
+
+    background-color: #f5f3f1;
+
+}
+
+.form {
+    width: 400px;
+    align-content: center;
+    margin-bottom: 40px;
+
+}
+
+#supersmall {
+    width: 800px;
+
+    height: 668px;
+
+}
+
+#submitform {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    left: 800px;
+    bottom: 260px;
+
+}
+
+#submitform button {
+    position: relative;
+    left: 50px;
+}
+
+.footerlogo {
+    position: absolute;
+    margin-top: 10px;
+    right: 130px
+}
+/* --------------------------- Child elements --------------------- */
+
+
+.subtextspan .box h2:nth-child(1) {
+    font-size: 2rem;
+}
+
+.subtextspan .box h2:nth-child(2) {
+    font-size: 3rem;
+}
+
+
+.subtextspan .box h2:nth-child(3) {
+    font-size: 1.5rem;
+}
+
